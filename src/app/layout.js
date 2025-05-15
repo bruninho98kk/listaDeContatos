@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Stack } from 'expo-router';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
@@ -11,14 +10,24 @@ export default function Layout() {
     return (
         <Stack
             screenOptions={{
-                headerStyle: { backgroundColor: '#007bff' }, // Cor azul
+                headerStyle: {
+                    backgroundColor: '#4CAF50', // Verde vibrante para o cabeçalho
+                    shadowColor: 'rgba(0, 0, 0, 0.2)', // Sombra sutil
+                    shadowOpacity: 0.8,
+                    shadowRadius: 4,
+                },
                 headerTintColor: '#fff', // Cor do texto no cabeçalho (branco)
+                headerTitleStyle: {
+                    fontWeight: 'bold',
+                    fontSize: 20,
+                },
+                headerBackTitleVisible: false, // Remove o texto do botão de voltar
             }}
         >
             <Stack.Screen
                 name="index"
                 options={{
-                    title: 'Lista de Contatos',
+                    title: '📋 Lista de Contatos', // Adiciona um ícone ao título
                     headerRight: () => (
                         <Pressable
                             onPress={() => router.push('/settings')} // Navegação para a tela de configurações
@@ -31,7 +40,12 @@ export default function Layout() {
             />
             <Stack.Screen
                 name="settings"
-                options={{ title: '⚙️ Configurações' }} // Título para a tela de configurações
+                options={{
+                    title: '⚙️ Configurações', // Título com ícone
+                    headerStyle: {
+                        backgroundColor: '#007BFF', // Azul vibrante para a tela de configurações
+                    },
+                }}
             />
         </Stack>
     );
@@ -41,5 +55,8 @@ export default function Layout() {
 const styles = StyleSheet.create({
     gearButton: {
         marginRight: 16, // Espaçamento para o ícone de configurações
+        padding: 8, // Área de toque maior
+        borderRadius: 8, // Bordas arredondadas para o botão
+        backgroundColor: 'rgba(255, 255, 255, 0.2)', // Fundo translúcido para o botão
     },
 });

@@ -192,160 +192,161 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#f0f4f8', // Fundo mais claro e moderno
-      padding: 16,
+        flex: 1,
+        backgroundColor: '#1c2833', // Fundo azul escuro
+        padding: 16,
     },
     addButton: {
-      position: 'absolute',
-      bottom: 16,
-      right: 16,
-      backgroundColor: '#4CAF50', // Verde vibrante
-      padding: 12,
-      borderRadius: 30,
-      height: 60,
-      width: 60,
-      justifyContent: 'center',
-      alignItems: 'center',
-      elevation: 5,
-      shadowColor: '#000',
-      shadowOpacity: 0.2,
-      shadowRadius: 4,
+        position: 'absolute',
+        bottom: 16,
+        right: 16,
+        backgroundColor: '#2980b9', // Azul vibrante
+        padding: 12,
+        borderRadius: 30,
+        height: 60,
+        width: 60,
+        justifyContent: 'center',
+        alignItems: 'center',
+        elevation: 5,
+        shadowColor: '#000',
+        shadowOpacity: 0.2,
+        shadowRadius: 4,
     },
     addButtonText: {
-      color: '#fff',
-      fontSize: 28,
-      textAlign: 'center',
-      fontWeight: 'bold',
+        color: '#fff',
+        fontSize: 28,
+        textAlign: 'center',
+        fontWeight: 'bold',
     },
     taskItemContainer: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      marginBottom: 10,
-      padding: 16,
-      backgroundColor: '#ffffff', // Fundo branco para contraste
-      borderRadius: 12, // Bordas arredondadas
-      shadowColor: '#000',
-      shadowOpacity: 0.1,
-      shadowRadius: 6,
-      elevation: 3,
-      borderWidth: 1,
-      borderColor: '#e0e0e0', // Borda sutil
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 10,
+        padding: 16,
+        backgroundColor: '#2c3e50', // Fundo azul escuro para contraste
+        borderRadius: 12, // Bordas arredondadas
+        shadowColor: '#000',
+        shadowOpacity: 0.1,
+        shadowRadius: 6,
+        elevation: 3,
+        borderWidth: 1,
+        borderColor: '#34495e', // Borda azul acinzentada
     },
     taskItem: {
-      fontSize: 18,
-      fontWeight: 'bold',
-      color: '#333',
-      marginBottom: 4,
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: '#ecf0f1', // Texto branco suave
+        marginBottom: 4,
     },
     taskItemPhone: {
-      fontSize: 14,
-      color: '#555',
-      marginBottom: 2,
+        fontSize: 14,
+        color: '#bdc3c7', // Cinza claro
+        marginBottom: 2,
     },
     taskItemCategory: {
-      fontSize: 12,
-      color: '#888',
-      fontStyle: 'italic',
+        fontSize: 12,
+        color: '#95a5a6', // Cinza suave
+        fontStyle: 'italic',
     },
     taskButtons: {
-      flexDirection: 'row',
+        flexDirection: 'row',
     },
     taskButton: {
-      marginLeft: 8,
-      padding: 8,
-      borderRadius: 8,
-      backgroundColor: '#f5f5f5', // Fundo cinza claro
-      elevation: 2,
+        marginLeft: 8,
+        padding: 8,
+        borderRadius: 8,
+        backgroundColor: '#34495e', // Fundo azul acinzentado
+        elevation: 2,
     },
     editButton: {
-      backgroundColor: '#FFC107', // Amarelo para editar
+        backgroundColor: '#3498db', // Azul para editar
     },
     deleteButton: {
-      backgroundColor: '#F44336', // Vermelho para excluir
+        backgroundColor: '#e74c3c', // Vermelho para excluir
     },
     buttonText: {
-      color: '#fff',
-      fontSize: 16,
+        color: '#fff',
+        fontSize: 16,
     },
     emptyText: {
-      textAlign: 'center',
-      marginTop: 32,
-      color: '#666',
-      fontSize: 16,
-      fontStyle: 'italic',
+        textAlign: 'center',
+        marginTop: 32,
+        color: '#7f8c8d', // Cinza suave
+        fontSize: 16,
+        fontStyle: 'italic',
     },
     modalBackdrop: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: 'rgba(0,0,0,0.5)', // Fundo escuro translúcido
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(0,0,0,0.7)', // Fundo escuro translúcido
     },
     modalContent: {
-      width: '90%',
-      backgroundColor: '#ffffff',
-      padding: 24,
-      borderRadius: 16, // Bordas mais arredondadas
-      shadowColor: '#000',
-      shadowOpacity: 0.3,
-      shadowRadius: 8,
-      elevation: 5,
+        width: '90%',
+        backgroundColor: '#2c3e50', // Fundo azul escuro
+        padding: 24,
+        borderRadius: 16, // Bordas mais arredondadas
+        shadowColor: '#000',
+        shadowOpacity: 0.3,
+        shadowRadius: 8,
+        elevation: 5,
     },
     modalTitle: {
-      fontSize: 20,
-      fontWeight: 'bold',
-      marginBottom: 16,
-      color: '#333',
-      textAlign: 'center',
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginBottom: 16,
+        color: '#ecf0f1', // Texto branco suave
+        textAlign: 'center',
     },
     input: {
-      borderWidth: 1,
-      borderColor: '#ddd',
-      padding: 12,
-      borderRadius: 8,
-      marginBottom: 12,
-      backgroundColor: '#f9f9f9',
-      fontSize: 16,
+        borderWidth: 1,
+        borderColor: '#34495e',
+        padding: 12,
+        borderRadius: 8,
+        marginBottom: 12,
+        backgroundColor: '#3e4a56', // Fundo cinza escuro
+        color: '#ecf0f1', // Texto branco
+        fontSize: 16,
     },
     categoryContainer: {
-      flexDirection: 'row',
-      justifyContent: 'space-around',
-      marginBottom: 16,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        marginBottom: 16,
     },
     categoryButton: {
-      padding: 10,
-      borderWidth: 1,
-      borderColor: '#ddd',
-      borderRadius: 8,
-      backgroundColor: '#f9f9f9',
+        padding: 10,
+        borderWidth: 1,
+        borderColor: '#34495e',
+        borderRadius: 8,
+        backgroundColor: '#3e4a56', // Fundo cinza escuro
     },
     categoryButtonSelected: {
-      backgroundColor: '#4CAF50', // Verde para categoria selecionada
-      borderColor: '#4CAF50',
+        backgroundColor: '#2980b9', // Azul vibrante para categoria selecionada
+        borderColor: '#2980b9',
     },
     categoryButtonText: {
-      color: '#333',
+        color: '#bdc3c7', // Cinza claro
     },
     categoryButtonTextSelected: {
-      color: '#fff',
+        color: '#fff',
     },
     saveButton: {
-      backgroundColor: '#4CAF50', // Verde para salvar
-      padding: 14,
-      borderRadius: 8,
-      alignItems: 'center',
-      marginBottom: 8,
+        backgroundColor: '#2980b9', // Azul vibrante para salvar
+        padding: 14,
+        borderRadius: 8,
+        alignItems: 'center',
+        marginBottom: 8,
     },
     saveButtonText: {
-      color: '#fff',
-      fontSize: 16,
-      fontWeight: 'bold',
+        color: '#fff',
+        fontSize: 16,
+        fontWeight: 'bold',
     },
     cancelButtonText: {
-      color: '#888',
-      textAlign: 'center',
-      fontSize: 14,
-      marginTop: 8,
+        color: '#7f8c8d', // Cinza suave
+        textAlign: 'center',
+        fontSize: 14,
+        marginTop: 8,
     },
-  });
+});
